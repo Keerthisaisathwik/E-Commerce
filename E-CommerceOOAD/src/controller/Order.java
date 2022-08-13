@@ -6,9 +6,15 @@ import java.util.Date;
 public class Order {
 
 	private int orderId;
+	private int orderNumber;
 	private Date orderDate;
 	private double amount;
+	private String shippingAddress;
 	
-	private ArrayList<OrderLog> logs;
+	private ArrayList<OrderLog> orderLogs;
 	private ArrayList<Item> items;
+	private  static int numberCounter =0;
+	private OrderStatus orderStatus;
+	
+	
 }
