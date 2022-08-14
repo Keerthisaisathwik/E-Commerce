@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Shipment {
 
+	private static int numberCounter = 0;
 	private int shipmentNumber;
-	private Date estimatedArrival;
+	private LocalDateTime estimatedArrival;
 	private LocalDateTime date;
 	private Order orderDetails;
-	private Order order;
 	
 	public Shipment(Order orderDetails) {
         	numberCounter += 1;
